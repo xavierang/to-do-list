@@ -1,0 +1,48 @@
+@import "base/typography";
+
+// html {
+//   box-sizing: border-box;
+// }
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
+
+#main {
+  background-color: white;
+}
+
+.listform {
+  input,
+  button {
+    font-size: 15px;
+  }
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  li {
+    min-height: 20px;
+    font-size: 15px;
+    background-color: white;
+    padding: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    list-style: none;
+    margin-bottom: 5px;
+    transition-property: border;
+    transition-duration: 1s;
+    &:hover {
+      border-left: 3px solid rgb(37, 37, 150);
+    }
+    &:hover button {
+      display: inline;
+    }
+    button {
+      border: none;
+      display: none;
+    }
+  }
+}
